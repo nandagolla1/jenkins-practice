@@ -3,6 +3,7 @@ pipeline {
         label 'Agent-1'
     }
 
+    // build
     stages {
         stage('Build') {
             steps {
@@ -20,4 +21,17 @@ pipeline {
             }
         }
     }
+    // post build
+    post { 
+        always { 
+            echo 'I will always say Hello again!'
+        }
+        success { 
+            echo 'hello success!'
+        }
+        fai;ure { 
+            echo 'hello failure!'
+        }
+    }
+
 }
