@@ -29,7 +29,7 @@ pipeline {
         success { 
             echo 'hello success!'
         }
-        fai;ure { 
+        failure { 
             echo 'hello failure!'
         }
     }
