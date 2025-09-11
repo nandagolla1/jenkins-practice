@@ -12,6 +12,9 @@ pipeline {
             steps {
                 script{
                     echo 'Building..'
+                    sh """
+                        env
+                    """
                 }
             }
         }
