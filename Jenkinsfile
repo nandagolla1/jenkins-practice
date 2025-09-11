@@ -2,6 +2,9 @@ pipeline {
     agent {
         label 'Agent-1'
     }
+    environment { 
+        COURSE = 'jenkins'
+    }
 
     // build
     stages {
